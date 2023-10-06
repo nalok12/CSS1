@@ -1,0 +1,151 @@
+<h3>Ques1: Create a simple page with some div tag and show different ways to add css. as well as what happens when you taget the same elements with inline, internal and external CSS also, Utilizer comments in the projects where required?</h3>
+<h3>Solution:-</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS </title>
+    <link rel="stylesheet" href="about.css">
+    <style>
+        /* Class SElector */ 
+      .box{
+        width: 500px;
+        height: 300px;
+        margin: 20px auto;
+        padding: 10px;
+        border:2px solid black;
+        border-width: 5px;
+        text-align: center;
+        color: red;
+        background-color: aqua;
+        border-radius: 10px;
+      }
+      .box p{
+        color:blue;
+      }
+    </style>
+</head>
+<body>
+    <!--Inline CSS goes here-->
+    <div style="color:blue; border: 2px solid black; background-color: aqua; border-radius: 10px; text-align: center;  border-width: 5px; width: 500px; height: 300px; padding: 10px; margin: 10px auto; ">
+        <h1>This is the type of Inline Cascading Style Sheets</h1>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit magnam repellat, commodi ullam harum nulla incidunt deleniti error neque nihil pariatur sed dignissimos illum cum doloremque, repellendus veniam eos sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consectetur, dolorum, soluta illo beatae velit incidunt dolorem sint rerum ipsam impedit eaque dicta esse aut ipsa voluptatum excepturi, laboriosam modi!</p>
+    </div>
+
+
+<!--internal CSS goes here-->
+    <div class="box">
+        <h1>this is the type Internal Cascading style sheets</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse omnis quas modi ut a nisi, dicta velit nulla aliquam ea eum aperiam qui necessitatibus rem harum sunt? Eum, quibusdam sed! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iure animi optio magnam recusandae voluptate beatae deserunt numquam rerum. Dolor, veritatis possimus vero odio inventore dolore accusamus aperiam animi delectus.</p>
+        
+        </div>
+
+        <!--External CSS goes here-->
+      <div class="container">
+<h1>This is type of External Cascading Style Sheets</h1>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iusto repellat cumque tempore iure facilis provident impedit aperiam dolorem necessitatibus illum, et, eum nulla modi! Et repellendus ratione provident nam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci facere voluptas asperiores eaque consequuntur aliquid nisi nam quasi? Unde laudantium neque tenetur cum libero corporis incidunt distinctio quaerat aut sapiente.</p>
+    </div>
+</body>
+</html>
+
+
+
+<h3>Ques:2 Build an HTML page with multiply paragraphs, each assihned a unique class name.Write CSS rules using class selectors to apply distinct styling to each paragraph. Follow the BEM naming convention and explain how you've named the classes?</h3>
+<h3>Solution</h3>
+<p><b>The BEM Convention:-</b>BEM stands by Block, Element, Modifier names to construct CSS class name,<br> separated by double underscore(__) and Hypens(-), It is based on the idea of the breaking down a web page into similar,reusable bloks of code.<br>It's a CSS naming convention for writting cleaner and more readable CSS classes.</p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS|Selector</title>
+</head>
+<body>
+
+  <!--BEM Selector-->
+
+<div class="card">
+<div class="card__header">
+  <img src="file:///C:/Users/alok/Desktop/alok/IMAGE/IMG_20230714_114544.jpg" alt="photo" class="card__photo">
+  
+</div>
+<div class="card__content">
+  <span class="card__title card__title--large">CSS|Selector</span>
+  <p class="card__para font-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ratione dolor minus. Vel officiis nesciunt, unde voluptatum nemo asperiores eum deserunt nam, fuga perferendis natus expedita dicta molestiae quae a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, enim nesciunt praesentium consequatur labore temporibus deleniti placeat commodi quod, ea velit sequi eveniet beatae delectus laborum voluptas provident natus atque.ipsum</p>
+</div>
+<div class="card__footer">
+  <button class="btn btn--red">Susbscribe Please</button>
+</div>
+<!--end selector-->
+
+
+</div>
+</body>
+</html>
+
+
+<h3>Ques:3 Develop on HTML form with various input elements. Use CSS to style the form, including setting background colors for input fields. Create a custum color pallete for the form elements, and demonstrate how to apply apacity to one of the form sections?</h3>
+<h3>Solution:-</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <!--form goes here-->
+  <fieldset class="carton">
+
+  <form id="regester" method="post">
+    
+    <div class="wrapper">
+    <legend>Regestration Form</legend><br>
+  <div><label for="first name">First Name:</label>
+  <input type="text size=40 id="first name" name="fname" placeholder="Enter your First name" minlength="3" required><br><br>
+  
+ <div class="wrap"><label for="last name">last Name:</label>
+  <input type="text" id="last name" name="lname" placeholder="Enter your last name" minlength="3" required></div><br>
+
+ <div class="pack"><label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="abc@gmail.com" required></div><br>
+
+<div class="packet"> <label for="password">Password:</label>
+  <input type="password" id="password" name="password" minlength="6" maxlength="15" required></div><br>
+  
+ <div class="wrap2"><label for="dob">DOB:</label>
+  <input type="date" id="dob" name="dob"  required></div><br>
+  
+   <div class="wrap3"> <label for="phone number">Phone Number:</label>
+    <input type="number" id="phone number" minlength="10" maxlength="10" required]>
+  </div><br>
+
+  <div class="wrap4"><label for="gender">Gender:-</label>
+  <label for="Male">Male</label>
+  <input type="radio" id="male" name="gender" required>
+  <label for="female">Female</label>
+<input type="radio" id="female" name="gender" required>
+</div><br>
+  <div class="wrap5"><label>Category:</label>
+ <select>
+ <option type="select" value="general">general</option>
+ <option type="select" value="obc">OBC</option>
+ <option type="select" value="sc">SC</option>
+ <option type="select" value="st">ST</option>
+</select></div>
+ 
+  
+</div><br>
+<button class="sub" value="submit">SUBMIT</button>
+  
+  
+</div>
+
+
+
+</form>
+</fieldset>
+</body>
+</html>
